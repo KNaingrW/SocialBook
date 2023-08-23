@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocialBook - Profile Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/27d88acb3f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <div class="left-nav">
+      <a href="index.html">
+      <img src="images/logo.png" class="logo">
+      </a>
+      <ul>
+        <li><img src="images/notification.png"></li>
+        <li><img src="images/inbox.png"></li>
+        <li><img src="images/video.png"></li>
+      </ul>
+    </div>
+    <div class="right-nav">
+      <div class="search-box">
+        <img src="images/search.png">
+        <input type="text" placeholder="Search">
+      </div>
+      <div class="nav-user-icon online" onclick="settingMenuToggle()">
+        <img src="images/profile-pic.png">
+      </div>
+    </div>
+    <!--Setting Menu-->
+    <div class="setting-menu">
+      <div id="dark-btn">
+        <span></span>
+      </div>
+      <div class="inner-setting-menu">
+        <div class="user-profile">
+          <img src="images/profile-pic.png">
+          <div>
+             <p>John Nicholson</p>
+             <a href="profile.html">See your Profile</a>
+          </div>
+        </div>
+        <hr>
+        <div class="user-profile">
+          <img src="images/feedback.png">
+          <div>
+             <p>Give Feedback</p>
+             <a href="#">Help us to improve the new design</a>
+          </div>
+        </div>
+        <hr>
+        <div class="setting-links">
+          <img src="images/setting.png" class="settings-icon">
+          <a href="#">Setting & Privacy <img src="images/arrow.png" width="10px"></a>
+        </div>
+        <div class="setting-links">
+          <img src="images/help.png" class="settings-icon">
+          <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+        </div>
+        <div class="setting-links">
+          <img src="images/display.png" class="settings-icon">
+          <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+        </div>
+        <div class="setting-links">
+          <img src="images/logout.png" class="settings-icon">
+          <a href="#">Log Out <img src="images/arrow.png" width="10px"></a>
+        </div>
+    </div>
+  </nav>
+  <!--Profile Page-->
+    <div class="profile-container">
+      <img src="images/cover.png" class="cover-img">
+      <div class="profile-details">
+        <div class="pd-left">
+          <div class="pd-row">
+            <img src="images/profile.png" class="pd-image">
+            <div>
+              <h3>John Nicholson</h3>
+              <p>120 Friends - 20 mutual</p>
+              <img src="images/member-1.png">
+              <img src="images/member-2.png">
+              <img src="images/member-3.png">
+              <img src="images/member-5.png">
+            </div>
+          </div>
+        </div>
+        <div class="pd-right">
+          <button type="button"><img src="images/add-friends.png">Friend</button>
+          <button type="button"><img src="images/message.png"> Message</button>
+          <br>
+          <a href="#"><img src="images/more.png"></a>
+        </div>
+      </div>
+      <div class="profile-info">
+        <div class="info-col">
+          <div class="profile-intro">
+            <h3>Intro</h3>
+            <p class="intro-text">Believe in yourself and you can do unbelievable things.
+              <img src="images/feeling.png">
+            </p>
+            <hr>
+            <ul>
+              <li><img src="images/profile-job.png"> CEO at SocialBook</li>
+              <li><img src="images/profile-study.png"> Studied at Lithan University</li>
+              <li><img src="images/profile-study.png">Went to Fellowship International Study 
+                Center</li>
+              <li><img src="images/profile-home.png">Lives in Yangon, Myanmar</li>
+              <li><img src="images/profile-location.png">From Yangon, Myanmar</li>
+            </ul>
+          </div>
+          <div class="profile-intro">
+            <div class="title-box">
+              <h3>Photos</h3>
+              <a href="#">All Photos</a>
+            </div>
+            <div class="photo-box">
+              <div><img src="images/photo1.png"></div>
+              <div><img src="images/photo2.png"></div>
+              <div><img src="images/photo3.png"></div>
+              <div><img src="images/photo4.png"></div>
+              <div><img src="images/photo5.png"></div>
+              <div><img src="images/photo6.png"></div>
+            </div>
+          </div>
+          <div class="profile-intro">
+            <div class="title-box">
+              <h3>Friends</h3>
+              <a href="#">All Friends</a>
+            </div>
+            <p>120 (29 mutual)</p>
+            <div class="friends-box">
+              <div><img src="images/member-1.png"><p>Joseph N</p></div>
+              <div><img src="images/member-2.png"><p>Nathan N</p></div>
+              <div><img src="images/member-3.png"><p>George D</p></div>
+              <div><img src="images/member-4.png"><p>Francis L</p></div>
+              <div><img src="images/member-5.png"><p>Anthony E</p></div>
+              <div><img src="images/member-6.png"><p>Michael A</p></div>
+              <div><img src="images/member-7.png"><p>Edward M</p></div>
+              <div><img src="images/member-8.png"><p>Bradon C</p></div>
+              <div><img src="images/member-9.png"><p>James Doe</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="post-col">
+          <div class="write-post-container">
+            <div class="user-profile">
+              <img src="images/profile-pic.png">
+              <div>
+                 <p>John Nicholson</p>
+                 <small>Public <i class="fas fa-caret-down"></i></small>
+              </div>
+            </div>
+            <div class="post-input-container">
+              <textarea rows="3" placeholder="What's on your mind, John?">
+              </textarea>
+              <div class="add-post-links">
+                <a href="#"><img src="images/live-video.png"> Live Video</a>
+                <a href="#"><img src="images/photo.png"> Photo/Video</a>
+                <a href="#"><img src="images/feeling.png"> Feeling/Activity</a>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/profile-pic.png">
+                <div>
+                   <p>John Nicholson</p>
+                  <span>August 18 2023, 4:18 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+            </div>
+            <p class="post-text">Subscribe <span>@Easy Tutorials</span> YouTube Channel
+            to watch more videos on wensites development and UI Designs. <a href="#">EasyTutorials</a>
+            <a href="#">#YouTube Channel</a></p>
+            <img src="images/feed-image-1.png" class="post-image">
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="images/like-blue.png"> 150</div>
+                <div><img src="images/comments.png"> 100</div>
+                <div><img src="images/share.png"> 50</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/profile-pic.png">
+                <div>
+                   <p>John Nicholson</p>
+                  <span>September 1 2023, 1:18 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+            </div>
+            <p class="post-text">Like and share this video with friends, tag <span>@Easy Tutorials</span> 
+            facebook page on your post. Ask your doubts in the comments  <a href="#">EasyTutorials</a>
+            <a href="#">#YouTube Channel</a></p>
+            <img src="images/feed-image-2.png" class="post-image">
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="images/like.png"> 121</div>
+                <div><img src="images/comments.png"> 29</div>
+                <div><img src="images/share.png"> 10</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/tech-guru-pic.png">
+                <div>
+                   <p>Stay Ahead in Tech</p>
+                  <span>August 23, 2023, 3:45 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+            </div>
+            <p class="post-text">🚀 Want to stay on the cutting edge of technology? Join us on a journey through 
+              the latest innovations and trends. From mind-blowing gadgets to futuristic concepts, we've got it all 
+              covered. 🔍 Dive deep into the world of tech with us. Follow <a href="#">TechExplorers</a> and 
+              don't forget to subscribe to our <a href="#">YouTube Channel</a> for mind-boggling tech updates!</p>
+            <img src="images/tech-image.png" class="post-image">
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="images/like.png"> 210</div>
+                <div><img src="images/comments.png"> 62</div>
+                <div><img src="images/share.png"> 15</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>      
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/profile-pic 1.png">
+                <div>
+                   <p>Tech Wizards</p>
+                  <span>August 19, 2023, 10:45 am</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+            </div>
+            <p class="post-text">Don't miss out on this amazing video! Share it with your friends and mention <span>@Tech Wizards</span> 
+            on your social media posts. Feel free to ask any questions in the comments below. Check out our <a href="#">TechTutorials</a>
+            and subscribe to our <a href="#">YouTube Channel</a>.</p>
+            <img src="images/feed-image-4.png" class="post-image">
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="images/like-blue.png"> 88</div>
+                <div><img src="images/comments.png"> 42</div>
+                <div><img src="images/share.png"> 15</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/traveler-pic.png">
+                <div>
+                   <p>Wanderlust Adventures</p>
+                  <span>August 24, 2023, 9:30 am</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+            </div>
+            <p class="post-text">🌎 Ready to satisfy your wanderlust? Explore the world's most breathtaking destinations
+               with us. From exotic beaches to picturesque mountains, we've got your travel cravings covered. 
+               🌄 Join our global community of travelers and share your own wanderlust tales. Follow <a href="#">
+                TravelDreamers</a> and get inspired for your next adventure!</p>
+                <div class="container-2">
+                  <img src="images/travel-image.png" class="post-image">
+                  <div class="bottom-right">+5</div>
+                </div>
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="images/like.png"> 315</div>
+                <div><img src="images/comments.png"> 82</div>
+                <div><img src="images/share.png"> 25</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <p>Copyright @2023</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
